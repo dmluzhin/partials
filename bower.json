@@ -1,0 +1,22 @@
+{
+  "name": "partials",
+  "authors": [
+    "Данила Лужин <d.m.luzhin@gmail.com>"
+  ],
+  "description": "partials for easyer creating",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  },
+  "main": "",
+  "homepage": "https://github.com/dmluzhin/partials"
+}
