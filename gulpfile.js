@@ -52,7 +52,7 @@ var config = {
 	},
 	tunnel: false,
 	host: 'localhost',
-	port: 9000,
+	port: 7000,
 	logePrefix: "test",
 	open: false
 };
