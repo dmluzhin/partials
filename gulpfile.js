@@ -31,7 +31,7 @@ var path = {
 	src: {
 		html: 'src/*.html',
 		js: 'src/js/main.js',
-		style: ['src/style/main.scss','src/style/owl-carousel.scss', 'src/style/animate.css'],
+		style: ['src/style/main.scss','src/style/font-awesome.scss'],
 		images: 'src/images/**/*.*',
 		fonts: 'src/fonts/**/*.*'
 	},
