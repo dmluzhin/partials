@@ -3,7 +3,18 @@
   height: $square-button-height;
 }
 %small-button {}
-%medium-button {}
+%medium-button {
+  background-color: $red;
+  border: none;
+  color: $white;
+  outline: none;
+  cursor: pointer;
+  width: $medium-button-width;
+  height: $medium-button-height;
+  text-transform: uppercase;
+  font-family: $merriweather;
+  font-size: 0.75rem;
+}
 %big-button {}
 
 
@@ -23,5 +34,17 @@
     width: 100%;
     height: 2px;
     background-color: $gr900;
+  }
+}
+
+.btn {
+  @extend %medium-button;
+}
+.medium-btn-empty {
+  border: 2px solid $red;
+  background-color: transparent;
+  transition: $transition-15ms;
+  &:hover, &:focus {
+    background-color: $red;
   }
 }

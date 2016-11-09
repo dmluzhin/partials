@@ -17,10 +17,14 @@ $gr900: #212121;
 /*Paddings*/
 $standart-box-padding: 32px;
 
+/*Margins*/
+$mgn-right: 1rem;
+
 /*Fonts*/
 $sans-serif: Arial, Helvetica, sans-serif;
 $serif: "Times New Roman", Times, serif;
 $monospaced: "Courier New", Courier, monospaced;
+$merriweather: "MerriweatherRegular", Georgia, sans-serif;
 
 /*Animations*/
 $transition-15ms: all ease .15s;
@@ -28,3 +32,7 @@ $transition-15ms: all ease .15s;
 /*Sizes*/
 $square-button-width: 40px;
 $square-button-height: 40px;
+
+$medium-button-width: 180px;
+$medium-button-height: 60px;
+

@@ -1,0 +1,23 @@
+.main-responsive-header {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+  background-color: $gr900;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 1.25rem;
+  }
+
+  .header-leftsided {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
