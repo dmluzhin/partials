@@ -1,0 +1,27 @@
+%square-button {
+  width: $square-button-width;
+  height: $square-button-height;
+}
+%small-button {}
+%medium-button {}
+%big-button {}
+
+
+.hamburger {
+  @extend %square-button;
+  position: relative;
+  z-index: 1;
+  background-color: $gr100;
+  border: 1px solid $gr100;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+
+  .line-top, .line-middle, .line-bottom {
+    width: 100%;
+    height: 2px;
+    background-color: $gr900;
+  }
+}

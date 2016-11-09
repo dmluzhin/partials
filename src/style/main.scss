@@ -5,4 +5,7 @@
 @import "layout/typography", "layout/core", "layout/header", "layout/content", "layout/footer";
 
 /*Components*/
-@import "partials/tabs";
+@import "partials/tabs", "layout/buttons";
+
+/*Headers*/
+@import "layout/headers/header-three-columns";

@@ -1,0 +1,59 @@
+.main-responsive-header {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+  background-color: $gr900;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 1.25rem;
+  }
+
+  .header-left {
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      left: 0; right: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .header-center {
+    @media screen and (max-width: 768px) {
+      order: 1;
+    }
+  }
+  .header-right {
+    @media screen and (max-width: 768px) {
+      order: 3;
+    }
+  }
+
+  .navigation {
+    &-right {
+      display: flex;
+      position: relative;
+      z-index: 1;
+    }
+    &-button {
+      padding: 8px;
+      margin: 0 8px;
+    }
+  }
+  .header-button-link {
+    color: $white;
+    font-size: 1rem;
+    &:hover {
+      color: $red;
+      transition: $transition-15ms;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 0.75rem;
+    }
+  }
+}
