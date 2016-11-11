@@ -48,3 +48,62 @@
     background-color: $red;
   }
 }
+
+button, .button, input[type="submit"],input[type="reset"],input[type="button"]{
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: $gr600;
+  text: {
+    transform: uppercase;
+    align: center;
+    decoration: none;
+  }
+  font: {
+    size: 0.75rem;
+    weight: 600;
+    family: $raleway;
+  }
+  letter-spacing: .1rem;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid $gr600;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  line-height: 38px;
+  &:hover {
+    color: $blue;
+  }
+  &:active {
+    border-bottom-width: 1px;
+    position: relative;
+    top: 1px;
+  }
+}
+
+.button.button-red, button.button-red,
+input[type="submit"].button-red,
+input[type="reset"].button-red,
+input[type="button"].button-red {
+  color: $white;
+  background-color: $red;
+  border-color: darken($red, 5%);
+  &:hover {
+    background-color: lighten($red, 5%);
+  }
+}
+
+.button.button-blue, button.button-blue,
+input[type="submit"].button-blue,
+input[type="reset"].button-blue,
+input[type="button"].button-blue {
+  color: $white;
+  background-color: $blue;
+  border-color: darken($blue, 5%);
+  &:hover {
+    background-color: lighten($blue, 5%);
+  }
+}
