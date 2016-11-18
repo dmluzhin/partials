@@ -30,7 +30,7 @@ var path = {
 
 	src: {
 		html: 'src/*.html',
-		js: 'src/js/main.js',
+		js: ['src/js/main.js','src/js/angular.min.js'],
 		style: ['src/style/main.scss','src/style/font-awesome.scss'],
 		images: 'src/images/**/*.*',
 		fonts: 'src/fonts/**/*.*'

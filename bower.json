@@ -1,10 +1,10 @@
 {
-  "name": "partials",
+  "name": "y",
   "authors": [
-    "Данила Лужин <d.m.luzhin@gmail.com>"
+    "y"
   ],
-  "description": "partials for easyer creating",
-  "license": "MIT",
+  "description": "y",
+  "license": "y",
   "private": true,
   "ignore": [
     "**/.*",
@@ -15,8 +15,11 @@
   ],
   "dependencies": {
     "normalize.css": "*",
-    "jquery": "2.*"
+    "jquery": "3.*"
   },
-  "main": "",
-  "homepage": "https://github.com/dmluzhin/partials"
+  "main": "y",
+  "homepage": "y",
+  "keywords": [
+    "y"
+  ]
 }
