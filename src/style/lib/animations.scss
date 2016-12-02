@@ -1,0 +1,20 @@
+/*basic animation rules*/
+@keyframes shadow {
+  from {box-shadow: 0 0 10px $gr300;}
+  50% {box-shadow: 0 0 30px $gr600;}
+  to {box-shadow: 0 0 10px $gr900;}
+}
+
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  background-color: $gr200;
+  border-radius: 3px;
+  animation: shadow 3s infinite ease-in-out;
+  animation-direction: alternate;
+}

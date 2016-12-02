@@ -1,0 +1,22 @@
+nav, .navigation {
+  display: block;
+  width: 100%;
+  background-color: $gr800;
+}
+.tags {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 12px;
+
+  &-item {
+    display: inline-block;
+    margin: 0 2px 2px 0;
+    text-transform: uppercase;
+    background-color: $gr200;
+    font-size: 1rem;
+    padding: 4px 12px;
+    border-radius: 2px;
+    @extend %ral-regular;
+  }
+}
