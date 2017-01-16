@@ -22,6 +22,7 @@ var gulp = require('gulp'),
 var path = {
 	build: {
 		html: 'build/',
+		elements: 'build/elements',
 		js: 'build/js',
 		css: 'build/css',
 		images: 'build/images',
@@ -30,6 +31,7 @@ var path = {
 
 	src: {
 		html: 'src/*.html',
+		elements: 'src/templates/elements/*.html',
 		js: ['src/js/main.js','src/js/angular.min.js'],
 		style: ['src/style/main.scss','src/style/font-awesome.scss'],
 		images: 'src/images/**/*.*',
@@ -38,6 +40,7 @@ var path = {
 
 	watch: {
 		html: 'src/**/*.html',
+		elements: 'src/templates/elements/*.html',
 		js: 'src/js/**/*.js',
 		style: 'src/style/**/*.scss',
 		images: 'src/images/**/*.*',
@@ -61,6 +64,13 @@ gulp.task('html:build', function() {
 	gulp.src(path.src.html)
 			.pipe(rigger())
 			.pipe(gulp.dest(path.build.html))
+			.pipe(reload({stream: true}));
+});
+
+gulp.task('elements:build', function() {
+	gulp.src(path.src.elements)
+			.pipe(rigger())
+			.pipe(gulp.dest(path.build.elements))
 			.pipe(reload({stream: true}));
 });
 
@@ -104,6 +114,7 @@ gulp.task('fonts:build', function () {
 
 gulp.task('build', [
 	'html:build',
+	'elements:build',
 	'style:build',
 	'js:build',
 	'fonts:build',
@@ -113,6 +124,9 @@ gulp.task('build', [
 gulp.task('watch', function() {
 	watch([path.watch.html], function(event, cb){
 		gulp.start('html:build');
+	});
+	watch([path.watch.html], function(event, cb){
+		gulp.start('elements:build');
 	});
 	watch([path.watch.style], function(event, cb){
 		gulp.start('style:build');

@@ -2,10 +2,10 @@
 @import "lib/reset", "lib/varibles", "lib/mixins";
 
 /*Layout*/
-@import "layout/typography", "layout/core", "layout/grid", "layout/header", "layout/content", "layout/footer";
+@import "layout/typography", "layout/core", "layout/grid", "layout/header", "layout/content", "layout/footer", "layout/tiles";
 
 /*Components*/
-@import "partials/tabs", "layout/buttons";
+@import "partials/tabs", "layout/buttons", "partials/slider";
 
 /*Headers*/
 @import "layout/headers/header-three-columns", "layout/headers/header-left-orientation", "partials/nav";

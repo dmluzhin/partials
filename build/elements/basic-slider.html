@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Pure CSS Tabs</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+
+	<title>Basic Slider (Pure JS)</title>
 </head>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<script type="text/javascript" src="js/main.js"></script>
 <body>
 <nav class="navigation">
 	<div class="tags">
@@ -20,6 +19,14 @@
 		<a href="typography.html" class="tags-item">typography</a>
 	</div>
 </nav>
+<div class="container slider">
+	<div id="main">
+		<button class="left" onclick="slider.left()"><</button>
+		<div id="src"></div>
+		<button class="right" onclick="slider.right()">></button>
+	</div>
+</div>
 
+<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
