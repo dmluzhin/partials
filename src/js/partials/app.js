@@ -1,15 +1,8 @@
-function human(firstname, lastname) {
-	this.firstname = firstname;
-	this.lastname = lastname;
-};
-
-human.prototype.getFullName = function(){
-	var fullName = this.firstname + " " + this.lastname;
-	return fullName;
-};
-
-var John = new human("John", "Doe");
-document.write(John.getFullName());
-
-var Ivan = new human("Ivan", "Sukablyat");
-document.write(Ivan.getFullName());
+function wmopen() {
+	var obj = window.showModalDialog("animations.html", ["Firstname", "Lastname"], "dialogWidth: 300px; dialogHeight: 200px; center=yes; status=no");
+	if(obj != null) {
+		var msg = "Имя: " + obj.first;
+		msg += "<br>Фамилия: " + obj.last;
+		document.getElementById("div1").innerHTML = msg;
+	}
+}

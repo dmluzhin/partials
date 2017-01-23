@@ -9,9 +9,61 @@
 </head>
 <body>
 //= ../partials/navigation.html
-<div class="container tooltips" onclick="denied()">
+<div class="menu">
+	<!--Top level menu-->
+	<table>
+		<tr>
+			<td><a href="#" onmouseout="getElementById('menu1').style.display='none';" onmouseover="getElementById('menu1').style.display='block';">Главная</a></td>
+			<td><a href="#" onmouseout="getElementById('menu2').style.display='none';" onmouseover="getElementById('menu2').style.display='block';">Доставка и оплата</a></td>
+			<td><a href="#" onmouseout="getElementById('menu3').style.display='none';" onmouseover="getElementById('menu3').style.display='block';">Каталог</a></td>
+			<td><a href="#" onmouseout="getElementById('menu4').style.display='none';" onmouseover="getElementById('menu4').style.display='block';">Контакты</a></td>
+		</tr>
+	</table>
+	<!--Second level menu-->
+	<table class="ids" id="menu1" onmouseout="this.style.display='none';" onMouseOver="this.style.display='block';">
+		<tr>
+			<td><a href="#">Мой профиль</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Мои заказы</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Корзина</a></td>
+		</tr>
+	</table>
+	<!--Third level menu-->
+	<table class="ids" id="menu2" onmouseout="this.style.display='none';" onMouseOver="this.style.display='block';">
+		<tr>
+			<td><a href="#">Способы оплаты</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Способы доставки</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Гарантии</a></td>
+		</tr>
+	</table>
 
+	<table class="ids" id="menu3" onmouseout="this.style.display='none';" onMouseOver="this.style.display='block';">
+		<tr>
+			<td><a href="#">Взрослым</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Детям</a></td>
+		</tr>
+	</table>
+
+	<table class="ids" id="menu4" onmouseout="this.style.display='none';" onMouseOver="this.style.display='block';">
+		<tr>
+			<td><a href="#">Адрес и карта проезда</a></td>
+		</tr>
+		<tr>
+			<td><a href="#">Обратная связь</a></td>
+		</tr>
+	</table>
 </div>
+<input type="button" value="Открыть" onclick="wmopen()" style="margin: 20px auto; display: block">
+<div id="div1"></div>
 <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
