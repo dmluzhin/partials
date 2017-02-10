@@ -193,6 +193,24 @@
 		return valid;
 	};
 </script>
+
+<script>
+	function getStrMonth(m) {
+		var d = new Date();
+
+		var Month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Okt","Nov","Dec"];
+
+		var currentMonth = d.getMonth();
+
+		if((m < 0) || (m > 11)) {
+			return Month[currentMonth];
+		}
+		return Month[m];
+	}
+
+	var d = new Date();
+	//window.alert(getStrMonth(d.getMonth()));
+</script>
 <body onload="timeStart();">
 //= templates/partials/navigation.html
 <div class="container">
@@ -259,5 +277,34 @@
 		</form>
 	</section>
 </div>
+
+<div class="container">
+
+	<p>События</p>
+
+	<button onclick="window.alert('onclick для кнопки')">Onclick BUTTON</button>
+	<p onclick="window.alert('onclick для документа')">Onclick PAR <span style="color: red; font-weight: bold" onclick="window.alert('onclick для SPAN')">Span</span></p>
+
+</div>
+
+<script>
+
+</script>
+
+<style>
+	.char {
+		display: inline-block;
+		vertical-align: top;
+		width: 20px;
+		height: 20px;
+		border: 1px solid black;
+	}
+</style>
+<script>
+	function addChar() {
+
+	}
+</script>
+	<button onclick="addChar()">Add Char</button>
 </body>
 </html>
