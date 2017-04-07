@@ -18,3 +18,23 @@
   animation: shadow 3s infinite ease-in-out;
   animation-direction: alternate;
 }
+
+ .blink {
+   background-color: $green;
+   color: $white;
+   animation: blink .8s infinite ease-in-out;
+   animation-direction: alternate;
+   box-shadow: none;
+   font-size: 3em;
+   width: 200px;
+   height: 200px;
+   margin: 30px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+@keyframes blink {
+  from {opacity: .5;}
+  to {opacity: 1;}
+}
