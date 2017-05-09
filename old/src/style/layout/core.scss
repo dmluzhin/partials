@@ -1,0 +1,30 @@
+body {
+  font-family: "MerriweatherRegular", Georgia, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: $body-text-color;
+}
+.centering-wrapper {
+  position: relative;
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  @include white-box;
+}
+.page {
+  margin: 0 auto;
+  padding: 1.2em;
+  @include white-box;
+}
+.dropdown {
+  position: relative;
+}
+
+.mgn-right {
+  margin-right: $mgn-right;
+}
+.fa-sm {
+  font-size: 0.75rem !important;
+  line-height: 0.75rem !important;
+  vertical-align: 15%;
+}

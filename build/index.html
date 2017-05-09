@@ -2,42 +2,106 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Pure CSS Tabs</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Свадьба</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
-<style>
-	.alert {
-		padding: 15px;
-		border: 1px solid #d6e9c6;
-		border-radius: 4px;
-		color: #3c763d;
-		background-color: #dff0d8;
-	}
-</style>
 <body>
-
-
-<nav class="navigation">
-	<div class="tags">
-		<a href="/" class="tags-item">main</a>
-		<a href="animations.html" class="tags-item">animations</a>
-		<a href="buttons.html" class="tags-item">buttons</a>
-		<a href="commandments.html" class="tags-item">commendments</a>
-		<a href="controller.html" class="tags-item">controller</a>
-		<a href="elements.html" class="tags-item">Elements</a>
-		<a href="typography.html" class="tags-item">typography</a>
+<header class="header">
+	<div class="header__overlay"></div>
+	<ul class="header__nav">
+		<li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
+		<li class="header__nav-item"><a href="#" class="header__nav-link">Что случилось</a></li>
+		<li class="header__nav-item"><a href="#" class="header__nav-link">Молодожены</a></li>
+		<li class="header__nav-item"><a href="#" class="header__nav-link">Куда ехать</a></li>
+		<li class="header__nav-item"><a href="#" class="header__nav-link">С кем связаться</a></li>
+	</ul>
+	<div class="header__container">
+		<div class="header__greeting">
+			<h1 class="header__greeting-sign">Привет!</h1>
+			<span class="header__subgreeting">Это Свадьба Сергея и Катерины</span>
+		</div>
 	</div>
-</nav>
+	<a href="" class="header__schevron"></a>
+</header>
+<div class="wrapper">
+	<div class="content">
+		<div class="content__greet">
+			<h2 class="content__greet-header">Что случилось?</h2>
+		</div>
+		<div class="content__item">
+			<div class="content__picture">
+				<img class="image-square" src="images/jpg/8.JPG"/>
+			</div>
+			<div class="content__text">
+				<p class="paragraph">Дорогие, любимые, красивые, Дамы и Господа! Друзья. Семья. Если вы это читаете, то вас пригласили на самое главное событие 2017 года!</p>
+			</div>
+		</div>
+		<div class="content__item">
+			<div class="content__text"><p class="paragraph">Это не просто приглашение, это ваш пропуск в мир безбашенного веселья, алкоголя и криков "Горько", танцев и замечательных людей! Ведь 02.06.2017,  в 16.00, по адресу Семеновская, д.42/2 (Лофт АндерСон на Семёновской)</p></div>
+			<div class="content__picture">
+				<img class="image-square" src="images/jpg/4.JPG"/>
+			</div>
+		</div>
+		<div class="content__item">
+			<div class="content__picture">
+				<img class="image-square" src="images/jpg/2.JPG"/>
+			</div>
+			<div class="content__text">
+				<p class="paragraph">Играют свадьбу такие замечательные люди, как Кудинов Сергей Евгеньевич и Екатерина Викторовна Кудинова (в девичестве Воропаева). Естественно первый вопрос, который у вас возник - "В чем же мне идти?!" Главное, чтоб красиво) Без опозданий и голодными) Настолько вкусно вам не будет, в этот день точно!</p>
+			</div>
+		</div>
+		<div class="content__item">
+			<div class="content__text">
+				<p class="paragraph">Приглашение сделано, теперь пару строк о молодоженах.
+					Начнём с невесты, она же главная на свадьбе! И приглашение писал я, поэтому мне легче начать с неё)</p>
+			</div>
+			<div class="content__picture">
+				<img class="image-square" src="images/jpg/9.JPG"/>
+			</div>
+		</div>
+	</div>
 
-<h3>some text</h3>
-<button onclick="adder()">banner</button>
-<button onclick="remover()">remove</button>
-<script>
-document.body.appendChild(document.createTextNode("Text node"));
-/*document.body.innerHTML = "inner HTML"*/
-
-</script>
-
+	<div class="justmarried">
+		<div class="justmarried__person">
+			<div class="person">
+				<div class="person__image kate__image"></div>
+				<div class="person__sign">Екатерина</div>
+			</div>
+			<div class="profile">
+				<ul>
+					<li>Великолепная</li>
+					<li>Мудрая</li>
+					<li>Проницательная</li>
+					<li>Трогательная</li>
+					<li>Прекрасная</li>
+					<li>Носит комбинезоны</li>
+					<li>Слушает сериалы</li>
+					<li>Очень сильно любит мужа</li>
+				</ul>
+			</div>
+		</div>
+		<div class="justmarried__person">
+			<div class="person">
+				<div class="person__image sergey__image"></div>
+				<div class="person__sign">Сергей</div>
+			</div>
+			<div class="profile">
+				<ul>
+					<li>Добрый</li>
+					<li>Сильный</li>
+					<li>Умный</li>
+					<li>Красивый</li>
+					<li>Хорошо плавает</li>
+					<li>Храпит ( со слов Екатерины, сам он это отрицает)</li>
+					<li>Статный</li>
+					<li>Вкусно готовит ( со слов Сергея)</li>
+					<li>Очень любит жену</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer"></footer>
 </body>
 </html>

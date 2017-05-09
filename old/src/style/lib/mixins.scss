@@ -1,0 +1,24 @@
+@mixin white-box {
+  background-color: $white;
+  padding: $standart-box-padding;
+  border-radius: 2px;
+}
+@mixin flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@mixin tile {
+  @include flex-center;
+  @include white-box;
+  box-shadow: $shadow-dp1;
+  transition: $transition-15ms;
+  margin: 4px;
+  width: 200px;
+  height: 200px;
+  &:hover {
+    box-shadow: $shadow-dp3;
+  }
+}

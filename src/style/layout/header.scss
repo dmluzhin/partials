@@ -1,60 +1,88 @@
-%choosed {
-  border-bottom: 0.0625rem solid $red;
-  color: $red;
-}
-
-.main-responsive-header {
+.header {
   width: 100%;
+  background-color: #333;
+  @include fullbg;
+  background-image: url("../images/jpg/main.jpg");
+  background-size: cover;
+  background-position: center center;
   position: relative;
-  background-color: $gr900;
-
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 100vh;
+  &__container {
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    margin: auto;
     width: 100%;
-    max-width: 980px;
-    height: 100px;
-    margin: 0 auto;
-    padding: 1.25rem;
-  }
-  .main-logo {
-    color: white;
-    font-size: 1.25em;
-    border-bottom: 0.0625em solid $red;
-    cursor: pointer;
-  }
-  .main-menu {
+    max-width: 1200px;
+    color: #fff;
+    z-index: 1;
+    text-align: center;
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+  }
+  &__overlay {
+    background-color: rgba(0,0,0,.38);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__greeting {
+    display: flex;
+    flex-direction: column;
 
-    a {
-      font-size: 1rem;
+    &-sign {
+      margin-bottom: 24px;
+      font-size: 4rem;
+    }
+  }
+  &__subgreeting {
+    font-size: 2.4rem;
+  }
+  &__schevron {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/png/chevron-down.png");
+    background-size: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 100%;
+    border: 5px solid white;
+  }
+  &__nav {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    &-item {
+      border: 1px solid white;
+    }
+
+    &-link {
+      display: block;
+      padding: 12px 16px;
       color: white;
-      padding: 0.625rem 0;
-      margin: 0 1rem;
-      text-transform: uppercase;
-      &:hover {
-        transition: $transition-15ms;
-        @extend %choosed;
-      }
-      @media screen and (max-width: 1024px) {
-        font-size: 0.75rem;
-      }
-    }
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
-  }
-  .hamburger {
-    display: none;
-    @media screen and (max-width: 768px) {
-      display: flex;
-    }
-  }
-}
 
-.choosed-link {
-  @extend %choosed;
+      &:hover {
+        background-color: white;
+        color: #333;
+      }
+    }
+
+  }
 }

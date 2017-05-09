@@ -1,0 +1,119 @@
+.wrapper {
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 40px 0;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+
+  &__greet {
+    width: 100%;
+    padding: 40px;
+
+    &-header {
+      font-size: 4rem;
+      margin-bottom: 40px;
+      color: #333;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: 100%;
+    border-bottom: none;
+  }
+
+  &__picture {
+    min-width: 50%;
+    max-width: 50%;
+  }
+
+  &__text {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.image-square {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.kate__image {
+  background-image: url("../images/jpg/5.jpg");
+  background-size: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sergey__image {
+  background-image: url("../images/jpg/7.jpg");
+  background-size: 600px;
+  background-position: left -80px top -70px;
+  background-repeat: no-repeat;
+}
+.justmarried {
+  width: 100%;
+  max-width: 1280px;
+  margin: 40px auto;
+
+  &__person {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+.person {
+
+  &__image {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-right: 80px;
+  }
+  &__sign {
+    width: 300px;
+    text-align: center;
+    font-size: 2.4rem;
+  }
+}
+
+.profile {
+  width: 100%;
+  padding: 20px;
+
+  ul {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li {
+      background-color: white;
+      border-radius: 6px;
+      margin-right: 8px;
+      font-size: 2rem;
+      line-height: 2rem;
+      margin-bottom: 8px;
+      padding: 12px;
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all ease .25s;
+      position: relative;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        bottom: 2px;
+      }
+    }
+  }
+}

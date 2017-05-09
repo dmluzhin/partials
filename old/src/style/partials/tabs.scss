@@ -1,0 +1,91 @@
+.tabs {
+  width: 100%;
+  max-width: 980px;
+  height: 230px;
+  margin: 0 auto;
+  background-color: #fafafa;
+
+  .tab-container {
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+
+    label {
+      display: inline-block;
+      cursor: pointer;
+      color: $black;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin: 0 8px;
+      &:hover {
+        color: $black;
+      }
+    }
+    .tab-content-container {
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+      background-color: #fff;
+      position: absolute;
+      top: 42px;
+      padding: 0 40px 0 20px;
+      border: 1px solid $gr50;
+      border-top: 0;
+      border-radius: 0 0 3px 3px;
+      width: 100%;
+
+      .tab-content {
+        opacity: 0;
+        padding: 15px 0;
+        min-height: 185px;
+        transition: opacity 0.1s ease-in;
+      }
+    }
+    .tab {
+      outline: 0;
+      float: left;
+      cursor: pointer;
+      opacity: 1;
+      width: 33.3333%;
+      line-height: 40px;
+      display: block;
+      margin: 0;
+      position: relative;
+      background: $gr400;
+      color: $black;
+      text-align: center;
+      border: 1px solid $gr50;
+      &.l-b {
+        border-left: 1px solid $gr50;
+      }
+      &:hover {
+        background: $gr200;
+      }
+      &:first-child {
+        border-radius: 3px 0 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 0 3px;
+      }
+    }
+    .tab-toggle {
+      display: none;
+      &.active + .tab,
+      &:checked + .tab {
+        background: #fff;
+        color: #333;
+      }
+      &.active ~ .tab-content-container,
+      &:checked ~ .tab-content-container {
+        height: auto;
+        opacity: 1;
+        .tab-content {
+          opacity: 1;
+          label { opacity: 1; }
+        }
+      }
+    }
+  }
+}

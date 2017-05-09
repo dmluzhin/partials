@@ -1,0 +1,57 @@
+.menu {
+  position: relative;
+  height: 30px;
+
+  table {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    border: 1px solid black;
+    background-color: $white;
+    border-spacing: 0;
+  }
+
+  td {
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    font: 12px $raleway;
+    color: $blue;
+    display: block;
+    border: 1px solid $black;
+    &:hover {
+      text-decoration: underline;
+      color: black;
+    }
+  }
+}
+
+.ids {
+
+  td {
+    width: 188px;
+  }
+  a {
+    border: none;
+  }
+}
+
+#menu1, #menu2, #menu3, #menu4 {
+  display: none;
+  top: 20px;
+  left: 16px;
+}
+
+#menu2 {
+  left: 226px;
+}
+#menu3 {
+  left: 436px;
+}
+#menu4 {
+  left: 646px;
+}

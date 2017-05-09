@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "MerriweatherRegular";
+  src: url("../fonts/pluggable/Merriweather/MerriweatherRegular/MerriweatherRegular.eot");
+  src: url("../fonts/pluggable/Merriweather/MerriweatherRegular/MerriweatherRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Merriweather/MerriweatherRegular/MerriweatherRegular.woff") format("woff"),
+  url("../fonts/pluggable/Merriweather/MerriweatherRegular/MerriweatherRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MerriweatherBold";
+  src: url("../fonts/pluggable/Merriweather/MerriweatherBold/MerriweatherBold.eot");
+  src: url("../fonts/pluggable/Merriweather/MerriweatherBold/MerriweatherBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Merriweather/MerriweatherBold/MerriweatherBold.woff") format("woff"),
+  url("../fonts/pluggable/Merriweather/MerriweatherBold/MerriweatherBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MerriweatherItalic";
+  src: url("../fonts/pluggable/Merriweather/MerriweatherItalic/MerriweatherItalic.eot");
+  src: url("../fonts/pluggable/Merriweather/MerriweatherItalic/MerriweatherItalic.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Merriweather/MerriweatherItalic/MerriweatherItalic.woff") format("woff"),
+  url("../fonts/pluggable/Merriweather/MerriweatherItalic/MerriweatherItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MerriweatherLight";
+  src: url("../fonts/pluggable/Merriweather/MerriweatherLight/MerriweatherLight.eot");
+  src: url("../fonts/pluggable/Merriweather/MerriweatherLight/MerriweatherLight.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Merriweather/MerriweatherLight/MerriweatherLight.woff") format("woff"),
+  url("../fonts/pluggable/Merriweather/MerriweatherLight/MerriweatherLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MerriweatherBoldItalic";
+  src: url("../fonts/pluggable/Merriweather/MerriweatherBoldItalic/MerriweatherBoldItalic.eot");
+  src: url("../fonts/pluggable/Merriweather/MerriweatherBoldItalic/MerriweatherBoldItalic.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Merriweather/MerriweatherBoldItalic/MerriweatherBoldItalic.woff") format("woff"),
+  url("../fonts/pluggable/Merriweather/MerriweatherBoldItalic/MerriweatherBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MerriweatherLightItalic";
+  src: url("../fonts/pluggable/Merriweather/MerriweatherLightItalic/MerriweatherLightItalic.eot");
+  src: url("../fonts/pluggable/Merriweather/MerriweatherLightItalic/MerriweatherLightItalic.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Merriweather/MerriweatherLightItalic/MerriweatherLightItalic.woff") format("woff"),
+  url("../fonts/pluggable/Merriweather/MerriweatherLightItalic/MerriweatherLightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("../fonts/pluggable/Raleway/RalewayRegular/RalewayRegular.eot");
+  src: url("../fonts/pluggable/Raleway/RalewayRegular/RalewayRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Raleway/RalewayRegular/RalewayRegular.woff") format("woff"),
+  url("../fonts/pluggable/Raleway/RalewayRegular/RalewayRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RalewayThin"; */
+@font-face {
+  font-family: "RalewayThin";
+  src: url("../fonts/pluggable/Raleway/RalewayThin/RalewayThin.eot");
+  src: url("../fonts/pluggable/Raleway/RalewayThin/RalewayThin.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Raleway/RalewayThin/RalewayThin.woff") format("woff"),
+  url("../fonts/pluggable/Raleway/RalewayThin/RalewayThin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RalewayExtraLight"; */
+@font-face {
+  font-family: "RalewayExtraLight";
+  src: url("../fonts/pluggable/Raleway/RalewayExtraLight/RalewayExtraLight.eot");
+  src: url("../fonts/pluggable/Raleway/RalewayExtraLight/RalewayExtraLight.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Raleway/RalewayExtraLight/RalewayExtraLight.woff") format("woff"),
+  url("../fonts/pluggable/Raleway/RalewayExtraLight/RalewayExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RalewayLight"; */
+@font-face {
+  font-family: "RalewayLight";
+  src: url("../fonts/pluggable/Raleway/RalewayLight/RalewayLight.eot");
+  src: url("../fonts/pluggable/Raleway/RalewayLight/RalewayLight.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Raleway/RalewayLight/RalewayLight.woff") format("woff"),
+  url("../fonts/pluggable/Raleway/RalewayLight/RalewayLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RalewayMedium"; */
+@font-face {
+  font-family: "RalewayMedium";
+  src: url("../fonts/pluggable/Raleway/RalewayMedium/RalewayMedium.eot");
+  src: url("../fonts/pluggable/Raleway/RalewayMedium/RalewayMedium.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Raleway/RalewayMedium/RalewayMedium.woff") format("woff"),
+  url("../fonts/pluggable/Raleway/RalewayMedium/RalewayMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RalewaySemiBold"; */
+@font-face {
+  font-family: "RalewaySemiBold";
+  src: url("../fonts/pluggable/Raleway/RalewaySemiBold/RalewaySemiBold.eot");
+  src: url("../fonts/pluggable/Raleway/RalewaySemiBold/RalewaySemiBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Raleway/RalewaySemiBold/RalewaySemiBold.woff") format("woff"),
+  url("../fonts/pluggable/Raleway/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RalewayBold"; */
+@font-face {
+  font-family: "RalewayBold";
+  src: url("../fonts/pluggable/Raleway/RalewayBold/RalewayBold.eot");
+  src: url("../fonts/pluggable/Raleway/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Raleway/RalewayBold/RalewayBold.woff") format("woff"),
+  url("../fonts/pluggable/Raleway/RalewayBold/RalewayBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RalewayExtraBold"; */
+@font-face {
+  font-family: "RalewayExtraBold";
+  src: url("../fonts/pluggable/Raleway/RalewayExtraBold/RalewayExtraBold.eot");
+  src: url("../fonts/pluggable/Raleway/RalewayExtraBold/RalewayExtraBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Raleway/RalewayExtraBold/RalewayExtraBold.woff") format("woff"),
+  url("../fonts/pluggable/Raleway/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RalewayBlack"; */
+@font-face {
+  font-family: "RalewayBlack";
+  src: url("../fonts/pluggable/Raleway/RalewayBlack/RalewayBlack.eot");
+  src: url("../fonts/pluggable/Raleway/RalewayBlack/RalewayBlack.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/pluggable/Raleway/RalewayBlack/RalewayBlack.woff") format("woff"),
+  url("../fonts/pluggable/Raleway/RalewayBlack/RalewayBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+%bold {
+  font: {
+    family: 'MerriweatherBold';
+    weight: 700;
+    style: normal;
+  }
+}
+
+%bolditalic {
+  font: {
+    family: 'MerriweatherItalic';
+    weight: 700;
+    style: italic;
+  }
+}
+
+%light {
+  font: {
+    family: 'MerriweatherLight';
+    weight: 200;
+    style: normal;
+  }
+}
+
+%lightitalic {
+  font: {
+    family: 'MerriweatherLightItalic';
+    weight: 200;
+    style: normal;
+  }
+}
+
+%regular {
+  font: {
+    family: 'MerriweatherRegular';
+    weight: 400;
+    style: normal;
+  }
+}
+
+%italic {
+  font: {
+    family: 'MerriweatherItalic';
+    weight: 400;
+    style: italic;
+  }
+}
+/*Raleway Font*/
+%ral-regular {
+  font: {
+    family: "RalewayRegular", Helvetica, sans-serif;
+    weight: 400;
+    style: normal;
+  }
+}
+/*Vars*/
+
+$red:                   #e53935;
+$blue:                  #1E88E5;
+$green:                 #43A047;
+$orange:                #FB8C00;
+
+$paragraph-width:       800px; //Максимальная ширина параграфа
+$font-size:             1.25rem;
+$line-height:           1.6;
+
+$linkcolor:             $blue;
+$body-text-color:       #444;
+$heading-text-color:    #222;
+$em-text-color:         #222;
+$bq-text-color:         #444;
+$note-text-color:       $gr700;
+$code-color:            $em-text-color;
+$text-highlight-color:  rgba($blue, 0.1);
+
+/*Elements'n'Tags*/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  @extend %bold;
+  color: $heading-text-color;
+  margin: 1em auto 0.25em auto;
+  max-width: $paragraph-width;
+  font-weight: normal;
+}
+
+h1, .h1 {font-size: 4.0625rem;}
+h2, .h2 {font-size: 3.25rem;}
+h3, .h3 {font-size: 2.5625rem;}
+h4, .h4 {font-size: 2rem;}
+h5, .h5 {font-size: 1.525rem;}
+h6, .h6 {font-size: 1.25rem;}
+
+p {
+  max-width: $paragraph-width;
+  margin: 0 auto;
+  text-align: justify;
+  hyphens: auto; //расстановка переносов
+
+  & + & {
+    margin-top: 1.5em; //Добавляет отступ к последующим параграфам
+  }
+}
+
+[role = "group"] {
+  max-width:              $paragraph-width;
+  margin:                 1em auto;
+}
+
+article[role = "article"] {
+  counter-reset: figure; // я пока не понял для чего это
+
+  header {
+    text-align:       center;
+    margin-bottom:    3em;
+
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+      margin:         0 auto;
+    }
+
+    h1 {
+      line-height: 1.2;
+      max-width: $paragraph-width * 1.4;
+    }
+  }
+
+  & > p:first-of-type {
+    font-size: 1.25em;
+    margin-bottom: 1em;
+      &:first-letter {
+        margin-right: -0.04em;
+        font-size: 2em;
+        line-height: 0;
+      }
+  }
+}
+
+a[role = "link"] {
+  text-decoration: none;
+  border: none;
+  border-bottom: 0.0625rem solid $linkcolor;
+  color: $linkcolor;
+
+  &:hover, &:focus {
+    color: lighten($linkcolor, 10%);
+    border-bottom-color: lighten($linkcolor, 10%);
+  }
+}
+
+code, pre {
+  font-family: monospace;
+  color: $code-color;
+}
+
+blockquote {
+  @extend %lightitalic;
+  max-width: $paragraph-width;
+  font-size: 1rem;
+  margin: 1em auto;
+  color: $bq-text-color;
+  background-color: $gr200;
+  padding: 1.6rem;
+    & code, & q {
+      font-style: normal; //Если будет code или текст в кавычках, избавит от italic
+    }
+}
+
+q {
+  &:before {
+    content: "\201C";
+  }
+
+  &:after {
+    content: "\201D";
+  }
+}
+
+small {
+  color: $note-text-color;
+  font-size: 0.75rem;
+}
+
+abbr {
+  border-bottom: 0.0625rem dotted $em-text-color;
+  color: $em-text-color;
+  cursor: help;
+}
+
+ul, ol {
+  max-width: $paragraph-width;
+  margin: 1em auto;
+  padding-left: 2.5rem;
+}
+ul { list-style-type: disc;}
+ol {list-style-type: decimal;}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  max-width: $paragraph-width;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: $gr200;
+
+  figcaption {
+    font-size: 1.125rem;
+    text-align: center;
+  }
+}
+
+[role = "note"] {
+  @extend %light;
+  color: $note-text-color;
+  font-size: 0.75rem;
+}
+.no-margin {
+  margin: 0;
+}

@@ -1,0 +1,40 @@
+.slider {
+  #main {
+    position: relative;
+    margin: 100px auto;
+    padding: 8px;
+    width: 680px;
+    height: 360px;
+    background-color: $gr300;
+    border: 5px solid $gr600;
+    border-radius: 3px;
+  }
+  #src {
+    margin: 7px auto;
+    width: 600px;
+    height: 320px;
+    background-color: $white;
+    background-size: cover;
+    border: 1px solid $black;
+    border-radius: 3px;
+  }
+
+  button {
+    position: absolute;
+    top: 0; bottom: 0;
+    margin: auto;
+    width: 25px;
+    height: 70px;
+    font: 12px $raleway;
+    text-align: center;
+    background: $gr100;
+    padding: 2px;
+  }
+  .left {
+    left: 5px;
+  }
+  .right {
+    right: 5px;
+  }
+}
+

@@ -1,0 +1,31 @@
+.tooltips {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: $gr900;
+  margin: 100px auto;
+}
+#tt {
+  position: absolute;
+  display: block;
+  padding: 10px;
+  border: 1px solid $gr300;
+  border-radius: 3px;
+  box-shadow: $shadow-dp1;
+  background-color: $white;
+}
+.help {
+  display: inline-block;
+  width: 12px;
+  color: $black;
+  border: 1px solid $gr300;
+  border-radius: 3px;
+  background-color: #E7F5FE;
+  cursor: help;
+  margin-left: 5px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  text-indent: 0;
+}

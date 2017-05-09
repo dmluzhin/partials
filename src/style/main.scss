@@ -2,12 +2,5 @@
 @import "lib/reset", "lib/varibles", "lib/mixins";
 
 /*Layout*/
-@import "layout/typography", "layout/core", "layout/grid", "layout/header", "layout/content", "layout/footer", "layout/tiles";
+@import "layout/typography", "layout/core", "layout/grid", "layout/header", "layout/content", "layout/footer";
 
-/*Headers*/
-@import "layout/headers/header-three-columns", "layout/headers/header-left-orientation", "partials/nav";
-
-/*Components*/
-@import "partials/tabs", "layout/buttons", "partials/slider", "partials/tooltips", "partials/popup-menu", "partials/accodion";
-
-@import "practice", "lib/animations";
