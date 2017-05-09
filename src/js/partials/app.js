@@ -6,3 +6,10 @@ function wmopen() {
 		document.getElementById("div1").innerHTML = msg;
 	}
 }
+
+
+$(document).ready(function(){
+	$(".button__scale-trigger").on('click', function(){
+		TweenMax.from(".animated__scale", .55, {scale:0, delay:.7, ease:Bounce.easeOut});
+	});
+});
