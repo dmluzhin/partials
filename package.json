@@ -5,6 +5,22 @@
   "author": "d.m.luzhin",
   "license": "ISC",
   "dependencies": {
-      "gulp": "^3.8.11"
-   }
+    "browser-sync": "^2.18.12",
+    "cross-spawn": "^5.1.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "imagemin-pngquant": "^5.0.1",
+    "rimraf": "^2.6.1",
+    "spawn-sync": "^1.0.15"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
