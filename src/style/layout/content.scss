@@ -8,9 +8,11 @@ table {
   width: 100%;
   font-size: $font-size-small;
   table-layout: fixed;
+  color: #333333;
 
   .image-holder > img {
     max-width: 150px;
+    width: 100%;
   }
 
   .paragraph {
@@ -19,6 +21,11 @@ table {
 
   thead>tr>th:first-child {
     width: 40px;
+  }
+  thead>tr>th {
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
   }
 
   .time-holder {
