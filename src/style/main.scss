@@ -1,8 +1,8 @@
 /*Lib*/
 @import "lib/reset", "lib/varibles", "lib/mixins";
 
+/*Bootstrap*/
+@import "lib/bootstrap";
+
 /*Layout*/
 @import "layout/typography", "layout/core", "layout/grid", "layout/header", "layout/content", "layout/footer";
-
-/*Parts*/
-@import "partials/canvas";
