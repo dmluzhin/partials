@@ -6,9 +6,14 @@
 
 table {
   width: 100%;
-  font-size: $font-size-small;
+  font-size: $font-size-small - 2px;
   table-layout: fixed;
   color: #333333;
+  font-family: 'Roboto', sans-serif;
+
+  .image-holder {
+    margin-bottom: 8px;
+  }
 
   .image-holder > img {
     max-width: 150px;
@@ -17,19 +22,25 @@ table {
 
   .paragraph {
     margin-bottom: 4px;
+    &-header {
+      font-size: 15px;
+      font-weight: 600;
+      color: #4C4C4C;
+    }
   }
 
   thead>tr>th:first-child {
     width: 40px;
   }
   thead>tr>th {
-    color: #999;
+    color: #4C4C4C;
     font-size: 15px;
     font-weight: 400;
   }
 
   .time-holder {
     font-size: 18px;
+    color: #4C4C4C;
   }
 
   .rest {
@@ -43,7 +54,19 @@ table {
   }
 
   .name-holder {
+    .surname {
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
 
+    .name {
+      margin-bottom: 4px;
+    }
+
+    .id-holder {
+      font-size: 12px;
+    }
   }
 }
 
